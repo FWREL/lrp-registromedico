@@ -24,15 +24,15 @@
 
         <div class="row" id="menu-content">
           <div id="welcome">
-            <p> ARCHIVOS MEDICOS</p>
+            <p>Selamat Datang di Pendataan Rumah Sakit</p>
             <table class="centered">
                <thead>
                  <tr>
-                   <th>FECHA</th>
-                   <th>N° EXPEDIENTE</th>
-                   <th>INSTITUCIÓN</th>ddd
-                   <th>SINTOMAS</th>
-                   <th>DIAGNOSTICO</th>
+                   <th>TANGGAL</th>
+                   <th>N° PROSES</th>
+                   <th>LEMBAGA</th>ddd
+                   <th>GEJALA</th>
+                   <th>DIAGNOSA</th>
                  </tr>
 
 
@@ -41,8 +41,8 @@
                </tbody>
              </table>
 
-            <button class="btn-large btn-flat waves-effect waves-light col s12" id="menu-search">BUSCAR HISTORIAL DEL PACIENTE</button>
-            <button class="btn-large btn-flat waves-effect waves-light col s12" id="menu-add">Agregar Datos</button>
+            <button class="btn-large btn-flat waves-effect waves-light col s12" id="menu-search">CARI RIWAYAT PASIEN</button>
+            <button class="btn-large btn-flat waves-effect waves-light col s12" id="menu-add">Tambahkan Data</button>
          
           </div>
 
@@ -51,37 +51,37 @@
               <div class="row">
                 <div class="input-field col s6">
                   <input id="firstname-search" type="text" class="validate">
-                  <label for="firstname-search">Nombre</label>
+                  <label for="firstname-search">Nama Depan</label>
                 </div>
                 <div class="input-field col s6">
                   <input id="lastname-search" type="text" class="validate">
-                  <label for="lastname-search">Apellido</label>
+                  <label for="lastname-search">Nama Belakang</label>
                 </div>
                 <div class="input-field col s6">
                   <input id="dob-search" type="text" class="validate">
-                  <label for="dob-search">Fecha de Nacimiento</label>
+                  <label for="dob-search">Tanggal Lahir</label>
                 </div>
                 <div class="input-field col s6">
                   <input id="offense-search" type="text" class="validate">
-                  <label for="offense-search">N° EXPEDIENTE</label>
+                  <label for="offense-search">N° PROSES</label>
                 </div>
               </div>
             </form>
-            <button class="btn-large btn-flat  waves-effect waves-light col s12" id="submit-search">Buscar Persona</button>
-            <button class="btn-large btn-flat waves-effect waves-light col s12 back">Regresar</button>
+            <button class="btn-large btn-flat  waves-effect waves-light col s12" id="submit-search">Submit</button>
+            <button class="btn-large btn-flat waves-effect waves-light col s12 back">Cancel</button>
           </div>
           <div id="search-result">
             <table class="centered result">
                <thead>
                  <tr>
-                   <th>Nombre</th>
-                   <th>Apellido</th>
-                   <th>Fecha de Nacimiento </th>
+                   <th>Nama Depan</th>
+                   <th>Nama Belakang</th>
+                   <th>Tanggal Lahir </th>
 
                  </tr>
                </thead>
                <tbody>
-                <button class="btn-large btn-flat waves-effect waves-light col s12 back"> Regresar </button>
+                <button class="btn-large btn-flat waves-effect waves-light col s12 back"> Cancel </button>
                  <br />
                </tbody>
 
@@ -92,41 +92,41 @@
 
 
           <div id="add">
-            <p class="error">Error - No person was found, first name, last name or dob could be wrong</p>
+            <p class="error">Error - No person was found, First Name, Last Name or Date of Birth could be wrong</p>
             <h2>...</h2>
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="firstname-add" type="text" class="validate" required placeholder="John">
-                  <label for="firstname-add">NOMBRE</label>
+                  <input id="firstname-add" type="text" class="validate" required placeholder="Tejo">
+                  <label for="firstname-add">Nama Depan</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="lastname-add" type="text" class="validate" required placeholder="Doe">
-                  <label for="lastname-add">APELLIDO</label>
+                  <input id="lastname-add" type="text" class="validate" required placeholder="Dion">
+                  <label for="lastname-add">Nama Belakang</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="dob-add" type="text" class="validate" required placeholder="LA FECHA NACIMIENTO  EXACTA DE LA PERSONA(PJ)">
-                  <label for="dob-add">NACIMIENTO</label>
+                  <input id="dob-add" type="text" class="validate" required placeholder="Tanggal Lahir Pasien">
+                  <label for="dob-add">Tanggal Lahir</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="charge-add" type="text" class="validate" required placeholder= "OBSERVACION FINAL DEL MEDICO  " >
-                  <label for="charge-add">DIAGNOSTICO</label>
+                  <input id="charge-add" type="text" class="validate" required placeholder= "Riwayat Terakhir " >
+                  <label for="charge-add">Diagnosa</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="term-add" type="text" class="validate" required placeholder="COLOCAR QUE MALESTAR PRESENTA">
-                  <label for="term-add">SINTOMAS</label>
+                  <input id="term-add" type="text" class="validate" required placeholder="Gejala Pasien">
+                  <label for="term-add">Gejala</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="date-add" type="text" class="validate" required value="HOY">
-                  <label for="date-add">FECHA</label>
+                  <input id="date-add" type="text" class="validate" required value="Tanggal data ini dibuat">
+                  <label for="date-add">Tanggal</label>
                 </div>
                 <div class="input-field col s12">
-                  <textarea id="description-add" class="materialize-textarea" required placeholder="INFORMACION EXTRA DEL PACIENTE O OBSERVACIONES ADICIONALES DEL MEDICO."></textarea>
-                  <label for="description-add">DESCRIPCIÓN</label>
+                  <textarea id="description-add" class="materialize-textarea" required placeholder="Keterangan dari EMS."></textarea>
+                  <label for="description-add">Keterangan</label>
                 </div>
               </div>
-              <button class="btn-large btn-flat waves-effect waves-light col s12" id="submit-add">AGREGAR</button>
-              <button class="btn-large btn-flat waves-effect waves-light col s12 back">REGRESAR</button>
+              <button class="btn-large btn-flat waves-effect waves-light col s12" id="submit-add">Submit</button>
+              <button class="btn-large btn-flat waves-effect waves-light col s12 back">Cancel</button>
             </form>
           </div>
         </div>
@@ -135,7 +135,7 @@
         <div id="header">
           <div class="left">
             <a href="#!" class="logo"><img src="assets/images/lspd.png" alt="LOGO" draggable="false"/></a>
-            <p class="small-txt">Made by jsfour</p>
+            <p class="small-txt">Rumah Sakit Indoclub</p>
           </div>
           <div class="right">
             <ul>
@@ -144,7 +144,7 @@
                 
                   <span style="color:WHITE">  
 
-                <p style="font-size:14px" >ARCHIVO</p></SPAN>
+                <p style="font-size:14px" >ARSIP</p></SPAN>
                 <span style="color:#000000"> 
                 <p  style="font-size:14px" >#1234567-890</p></SPAN>
               </li>
@@ -152,7 +152,7 @@
                <br/>
               <li>
               <span style="color:WHITE">    
-                <p style="font-size:14px" >ID REGISTRO</p></SPAN>
+                <p style="font-size:14px" >ID PENDAFTARAN</p></SPAN>
 
                  
                 <p style="font-size:14px" ><a href="#!" style="color:#000000" class="r-recordid">XXXXXXXX</a></p>
@@ -165,11 +165,11 @@
             <ul>
               <li>
                 <p>Name</p>
-                <p class="r-name"  style="color:#000000"  >unknown, unknown</p>
+                <p class="r-name"  style="color:#000000"  >Tidak diketahui.</p>
               </li>
               <li>
                 <p>Aliases</p>
-                <p class="r-aliases" style="color:#000000" >unknown</p>
+                <p class="r-aliases" style="color:#000000" >Tidak diketahui.</p>
               </li>
               <li id="r-recordid">
                 <p>Record id</p>
@@ -186,36 +186,36 @@
               </li>
               <li class="divided">
                 <div class="left">
-                  <p>GENERO</p>
-                  <p class="r-sex" style="color:#000000" >none</p>
+                  <p>Jenis Kelamin</p>
+                  <p class="r-sex" style="color:#000000" >Tidak diketahui.</p>
                 </div>
                 <div class="right">
-                  <p>CUIDADANO   </p>
-                  <p> <span style="color:#000000">Si</span></p>
+                  <p>Warga Negara   </p>
+                  <p> <span style="color:#000000">Tidak diketahui.</span></p>
                 </div>
               </li>
               <li class="divided">
                 <div class="left">
-                  <p>ALTURA</p>
+                  <p>Tinggi Badan</p>
                   <p style="color:#000000;font-weight:bold" class="r-height"><strong>000cm</strong></p>
                 </div>
                 <div class="right">
-                  <p>PESO</p>
+                  <p>Berat Badan</p>
                   <p style="color:#000000" class="r-weight">00kg</p>
                 </div>
               </li>
               <li class="divided">
                 <div class="left">
-                  <p>COLOR OJOS</p>
-                  <p class="r-eyecolor" style="color:#000000"  >none</p>
+                  <p>Warna Mata</p>
+                  <p class="r-eyecolor" style="color:#000000"  >Tidak diketahui.</p>
                 </div>
                 <div class="right">
-                  <p>COLOR PELO</p>
-                  <p class="r-haircolor" style="color:#000000"  >none</p>
+                  <p>Warna Mata</p>
+                  <p class="r-haircolor" style="color:#000000"  >Tidak diketahui.</p>
                 </div>
               </li>
               <li id="r-dob">
-                <p>NACIMIENTO</p>
+                <p>Kelahiran</p>
                 <span style="color:#000000"> 
                 <p class="square r-dob-year"><i>Y</i>00</p>
                 <p class="square r-dob-month"><i>M</i>00</p>
@@ -229,15 +229,15 @@
             <img src="assets/images/male.png" alt="avatar" draggable="false" class="avatar"/>
           </div>
           <div id="records">
-            <h1 align="center"> HISTORIAL MEDICO  </h1>
+            <h1 align="center"> Riwayat Medis  </h1>
             <table class="centered">
                <thead>
                  <tr>
-                   <th>FECHA</th>
-                   <th>N° EXPEDIENTE</th>
-                   <th>INSTITUCION</th>
-                   <th>SINTOMAS</th>
-                   <th>DIAGNOSTICO</th>
+                   <th>TANGGAL</th>
+                   <th>N° PROSES</th>
+                   <th>LEMBAGA</th>
+                   <th>GEJALA</th>
+                   <th>DIAGNOSIS</th>
                  </tr>
                </thead>
                <tbody>
@@ -246,7 +246,7 @@
 
              </table>
 
-            <button class="btn-large btn-flat waves-effect waves-light col s12 back">REGRESAR</button>
+            <button class="btn-large btn-flat waves-effect waves-light col s12 back">Cancel</button>
 
           </div>
          
@@ -258,20 +258,20 @@
         <div id="header">
           <div class="left">
             <a href="#!" class="logo"><img src="assets/images/lspd.png" alt="LOGO" draggable="false"/></a>
-            <p class="small-txt">Made by jsfour</p>
+            <p class="small-txt">Rumah Sakit Indoclub.</p>
           </div>
           <div class="right">
             <ul>
               <li>
 
                 <span style="color:#000">
-                <p style="font-size:13px"> NOMBRE</p> </span>
+                <p style="font-size:13px"> Nama</p> </span>
                 <p  style="font-size:12px" class="r-name">&nbsp;  XXX </p>
               </li>
                <br/>
               <li>
                  <span style="color:#000">
-                <p style="font-size:13px">NACIMIENTO</p> </span>
+                <p style="font-size:13px">Kelahiran</p> </span>
                 <p  style="font-size:12px"  ><a href="#!" style="color:#000000" class="dob r-dob">XXX </a></p>
               </li>
             </ul>
@@ -282,13 +282,13 @@
             <ul>
               <li class="divided">
                 <div class="ce">
-                  <p  style="font-size:11px" >FECHA</p>
+                  <p  style="font-size:11px" >Tanggal</p>
                  <span style="color:#000000"> <p style="font-size:14px" class="r-date">XXXX-XX-XX</p></span>
                 </div>
 
                 <div class="right">
 
-                <p style="font-size:11px" > DIAGNOSTICO </p>
+                <p style="font-size:11px" > DIAGNOSIS </p>
 
               
        <span style="color:#000000"> <p style="font-size:11px" class="r-term">XX</p></span>
@@ -297,7 +297,7 @@
 
               </li>
               <li id="r-offense">
-                <p style="font-size:11px">N° EXPEDIENTE</p>
+                <p style="font-size:11px">N° PROSES</p>
                  <span style="color:#000000">
                 <p style="font-size:12px" class="square">X</p>
                 <p style="font-size:12px" class="square">-</p>
@@ -310,7 +310,7 @@
               <li id="r-term">
 
 
-                  <p  style="font-size:11px" > SINTOMA </p>
+                  <p  style="font-size:11px" > GEJALA </p>
 
                  <span style="color:#000000"> <p style="font-size:11px" class="r-charge">XX</p></span>
 
@@ -325,7 +325,7 @@
 
               <li class="info">
 
-               <span style="color:#000000"> <p style="font-size:12px">INFORMACION ADICIONAL </p></span>
+               <span style="color:#000000"> <p style="font-size:12px">INFORMASI TAMBAHAN </p></span>
                 <textarea class="r-description"></textarea>
               </li>
 
@@ -339,22 +339,22 @@
           <div id="signature">
             <div class="signature-part">
               <p class="r-offense">X-XXX</p>
-              <p>N° EXPEDIENTE</p>
+              <p>N° PROSES</p>
             </div>
             <div class="signature-part">
               <p class="r-date">XX</p>
-             <p>FECHA DE REGISTRO</p>
+             <p>TANGGAL REGISTRASI</p>
             </div>
             <div class="signature-part">
               <p id="the-signature">X</p>
-              <p>FIRMA DEL MEDICO</p>
+              <p>Tanda Tangan Medis</p>
             </div>
           </div>
-          <button class="btn-large btn-flat waves-effect waves-light" id="submit-update">CAMBIAR INFORMACION</button>
+          <button class="btn-large btn-flat waves-effect waves-light" id="submit-update">GANTI INFORMASI</button>
         <!--   <button class="btn-large btn-flat waves-effect waves-light" id="submit-delete">BORRAR CARGOS</button>--> 
-                   <button class="btn-large btn-flat waves-effect waves-light col s12 back">REGRESAR</button>
+                   <button class="btn-large btn-flat waves-effect waves-light col s12 back">CANCEL</button>
 
-          <button class="btn-large btn-flat waves-effect waves-light large" id="submit-classified">CLASIFICAR HISTORIAL</button>
+          <button class="btn-large btn-flat waves-effect waves-light large" id="submit-classified">RIWAYAT KLASIFIKASI</button>
 
 
       </div>
