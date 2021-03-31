@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
         TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
         Citizen.Wait(0)
 
-    TriggerEvent('chat:addSuggestion', '/mdtems', ' Registro Medico de los EMS', {})    
+    TriggerEvent('chat:addSuggestion', '/mdtems', ' Data EMS', {})    
     end
 
     while ESX.GetPlayerData().job == nil do
@@ -102,7 +102,7 @@ ESX.TriggerServerCallback('lrp-registromedico:fetch', function(d)
 
 
 else
-    exports['mythic_notify']:DoCustomHudText('cajaroja', ' No eres ems o estas en servicio para usar este comando ',3500)
+    exports['mythic_notify']:DoHudText('error', 'Kamu bukan anggota EMS !')
 end
 
 
@@ -196,7 +196,7 @@ end)
 
 RegisterCommand('fixmdtems',function()
 cerrarmdtems()
-print("probando close mdt2")
+print("refresh MDT")
 
 end)
 
