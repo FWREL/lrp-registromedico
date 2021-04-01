@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
         TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
         Citizen.Wait(0)
 
-    TriggerEvent('chat:addSuggestion', '/mdtems', ' Data EMS', {})    
+    TriggerEvent('chat:addSuggestion', '/mdt', ' Data EMS', {})    
     end
 
     while ESX.GetPlayerData().job == nil do
